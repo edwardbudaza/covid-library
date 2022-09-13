@@ -17,7 +17,7 @@ jobs:
       - name: Audit
         run:  npm audit fix --force
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --force
       - name: Build dependencies
         run: npm run build
       - name: Archive production artifact
