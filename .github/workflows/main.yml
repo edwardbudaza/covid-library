@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@main
+      - name: Audit
+        run:  npm audit fix --force
       - name: Install dependencies
         run: npm ci
       - name: Build dependencies
